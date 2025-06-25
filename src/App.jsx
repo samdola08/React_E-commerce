@@ -5,6 +5,9 @@ import "@fontsource/roboto";
 import Header from "./components/header/header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/footer/footer";
+import DetailsPage from "./Pages/Details";
+
+
 
 const Home = React.lazy(() => import("./Pages/Home/index"));
 const Listing = React.lazy(() => import("./Pages/Listing"));
@@ -17,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/list" element={<Listing />} />{" "}
+          <Route path="/product/details" element={<DetailsPage />} />{" "}
         
           <Route path="*" element={<Home />} />
         </Routes>

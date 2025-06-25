@@ -48,7 +48,7 @@ const products = [
     id: 1,
     imgSrc: Banner8,
     title: 'Seeds of Change Organic Quinoa, Brown, & Red Rice',
-    countdown: '2025-07-01T00:00:00',
+    countdown: "2025-07-01T00:00:00",
     ratingWidth: '90%',
     ratingText: '4.0',
     brand: 'NestFood',
