@@ -1,0 +1,60 @@
+.bannerSection{
+    padding: 25px 0px;
+   
+}
+.bannerSection .col .box{
+    position: relative;
+    border-radius: 15px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.bannerSection .col .box img{
+    border-radius: 15px;
+}
+.bannerSection .col .box:hover img{
+    transform: scale(1.1);
+}
+
+.bannerSection .col .box .info{
+    position: absolute;
+    top: 32%;
+    left: 10%;
+}
+.bannerSection .col .box .info h4{
+    font-weight: 900;
+  color: #253D4E;
+  font-size: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+.bannerSection .col .box .info h4:hover {
+  transform: translateY(-10px); 
+}
+
+.bannerSection .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.bannerSection .shopBtn {
+  background-color: #3bb77e;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;  
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  align-self: flex-start;
+}
+
+.bannerSection .shopBtn:hover {
+  background-color: #FDC040;
+   padding-right: 20px; 
+  transform: scaleX(1.02);
+}

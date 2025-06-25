@@ -1,0 +1,256 @@
+.photoCard .product-cart-wrap {
+  /* border: 1px solid #ececec; */
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  margin-top: 100px;
+  height: 550px;
+
+}
+
+.photoCard .product-cart-wrap:hover {
+  /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.25); */
+  transform: translateY(-5px);
+}
+
+.photoCard .product-img-action-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20%;
+  
+}
+.photoCard .deals-countdown-wrap {
+  position: absolute;
+  top: 48%;   
+  left: 50%;  
+  z-index: 10;  
+   transform: translate(-50%, -50%); 
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  /* width: 40px; */
+  display: flex;
+     border-radius: 50px;
+  gap: 5px;
+}
+
+.photoCard .countdown-below-image {
+  padding: 10px 20px;
+  background: #f9f9f9;
+  border-top: 1px solid #ececec;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 15px;
+ 
+}
+.photoCard .deals-countdown {
+  display: flex;
+  gap: 5px;
+  font-size: 13px;
+  color: #fff; 
+}
+
+
+.photoCard .countdown-section {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 3px 6px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.photoCard .countdown-amount {
+  font-weight: bold;
+  display: block;
+  font-size: 14px;
+  color: #3BB77E;
+}
+
+.photoCard .countdown-period {
+  font-size: 25px;
+  opacity: 0.8;
+  color: #7E7E7E;
+}
+.photoCard .product-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+  padding: 20px;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.photoCard .product-content-wrap {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 325px;
+  background: rgba(255, 255, 255, 1);
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 5;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.25);
+  box-sizing: border-box;
+  height: 192px;
+}
+
+
+.photoCard .product-img img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photoCard .product-cart-wrap:hover .product-img img {
+  transform: scale(1.05);
+}
+
+/* .photoCard .product-content-wrap {
+  padding: 20px;
+  
+} */
+
+.photoCard .deals-countdown-wrap {
+  margin-bottom: 10px;
+}
+.photoCard .product-content-wrap{
+  top:60%;
+  left:50%;
+  transform:translate(-50%,-50%);  
+  width:calc(100% - 40px);       
+  max-width:300px;            
+}
+
+.photoCard .deals-countdown {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  color: #333;
+}
+
+.photoCard .countdown-section {
+  background: #f7f7f7;
+  padding: 5px 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.photoCard .countdown-amount {
+  font-weight: bold;
+  display: block;
+  font-size: 20px;
+}
+
+.photoCard .countdown-period {
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.photoCard .deals-content h2 {
+  font-size: 16px;
+  margin: 0 0 8px;
+  line-height: 1.4;
+
+}
+
+.photoCard .product-rate-cover {
+  margin-bottom: 8px;
+}
+
+.photoCard .product-rating {
+  height: 20px;
+  background: linear-gradient(90deg, #ffc107, #ffc107 50%, #e0e0e0 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+}
+
+.photoCard .font-small {
+  font-size: 12px;
+}
+
+.photoCard .text-muted {
+  color: #888 !important;
+}
+
+.product-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.photoCard .product-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #29A56C;
+}
+
+
+.photoCard .product-price .old-price {
+  font-size: 14px;
+  color: #aaa;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+.photoCard .product-content-wrap h2 {
+  font-size: 16px;
+  margin: 0 0 8px;
+  line-height: 1.4;
+}
+
+.photoCard .add-cart .add {
+  background: none;
+  border: none;
+  color: #29A56C;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.photoCard .add-cart .add i {
+  margin-right: 5px;
+}
+.photoCard button {
+  background: #aee9cc;
+  color: #3bb77e;
+  font-weight: bold;
+  padding: 6px 15px;
+  border-radius: 8px;
+  text-transform: capitalize;
+    text-decoration: none;
+}
+.photoCard .add button{
+    text-decoration: none;
+}
+.photoCard button:hover {
+  background: #3bb77e;
+  color: #fff;
+}
+.photoCard a,
+.photoCard a:hover,
+.photoCard h2,
+.photoCard h2 a,
+.photoCard h2 a:hover {
+  text-decoration: none !important;
+  color: #253D4E;
+  font-weight: bolder;
+}
+
+.photoCard h2 a:hover{
+  color: #3bb77e;
+}
+.photoCard a{
+  color: #3bb77e;
+}
+.photoCard a:hover{
+  color: #ffc107;
+}

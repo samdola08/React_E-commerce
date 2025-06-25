@@ -1,0 +1,25 @@
+import React, { useEffect, useState } from 'react';
+import ProductCard from './ProductCard';
+import axios from 'axios';
+
+const ProductGrid = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    axios.get('/api/products') // তোমার API endpoint
+      .then(res => {
+        setProducts(res.data);
+      })
+      .catch(err => console.error(err));
+  }, []);
+
+  return (
+    <div className="row">
+      {products.map(product => (
+        <ProductCard key={product.id} product={product} />
+      ))}
+    </div>
+  );
+};
+
+export default ProductGrid;

@@ -1,0 +1,147 @@
+.topheader {
+  background-color: #fff;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #253D4E;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.09);
+}
+
+
+.topheader .header-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+ gap: 16px;
+    position: relative;
+}
+
+.topheader .header-info-two ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  position: relative;
+}
+
+.topheader .header-info-two ul li a{
+  text-decoration: none;
+    color: rgb(126, 126, 126);
+
+}
+
+.topheader li:before {
+  content: '';
+  width: 1px;
+  height: 16px;
+  background-color: #e3e3e3;
+  position: absolute;
+  right: -20px; 
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.topheader .header-info ul li {
+  display: inline-block;
+   position: relative;
+    padding-left: 10px; 
+  margin-left: 10px; 
+}
+
+
+.topheader .header-info  ul li a,
+.topheader .header-info ul li {
+  text-decoration: none;
+  color: rgb(126, 126, 126);
+  font-weight: bolder;
+  transition: all 0.3s ease;
+}
+
+.topheader .header-info ul li a:hover {
+  color: #253D4E;
+}
+
+/* ===== Header Right Info ===== */
+.topheader .header-info-right {
+  text-align: right;
+}
+
+.topheader .text-brand {
+  color: #3bb77e;
+  font-weight: bold;
+}
+
+/* ===== Language Dropdown ===== */
+.topheader .language-dropdown-active {
+  position: relative;
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.topheader .language-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: none;
+  background: #fff;
+  /* border: 1px solid #eee; */
+  /* box-shadow: 0 2px 8px rgba(0,0,0,0.05); */
+  z-index: 10;
+  min-width: 100px;
+}
+
+.topheader .language-dropdown-active:hover .language-dropdown {
+  display: block;
+}
+
+.topheader .language-dropdown li {
+  list-style: none;
+}
+
+.topheader .language-dropdown li a {
+  display: block;
+  padding: 8px 12px;
+  color: #253D4E;
+  text-decoration: none;
+}
+
+.topheader .language-dropdown li a:hover {
+  background-color: #f7f7f7;
+  color: #3bb77e;
+}
+
+
+.topheader #news-flash {
+  overflow: hidden;
+  height: 20px;
+  position: relative;display: flex;
+  justify-content: center;
+}
+
+.topheader #news-flash ul {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  animation: flashScroll 8s linear infinite;
+}
+
+.topheader #news-flash li {
+  list-style: none;
+  height: 20px;
+  line-height: 20px;
+  color: #253D4E;
+  font-weight: 600;
+}
+
+@keyframes flashScroll {
+  0% { top: 0; }
+  33% { top: -20px; }
+  66% { top: -40px; }
+  100% { top: 0; }
+}
+
+/* ===== Responsive Adjustment (Mobile) ===== */
+

@@ -1,0 +1,55 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+
+const ProductCard = ({ product }) => {
+  return (
+    <div className="col-xl-3 col-lg-4 col-md-6">
+      <div className="product-cart-wrap style-2 wow animate__animated animate__fadeInUp" data-wow-delay="0">
+        <div className="product-img-action-wrap">
+          <div className="product-img">
+            <Link to={`/product/${product.id}`}>
+              <img src={product.imgSrc} alt={product.title} />
+            </Link>
+          </div>
+        </div>
+        <div className="product-content-wrap">
+          {product.countdown && (
+            <div className="deals-countdown-wrap">
+              <div className="deals-countdown" data-countdown={product.countdown}></div>
+            </div>
+          )}
+          <div className="deals-content">
+            <h2>
+              <Link to={`/product/${product.id}`}>{product.title}</Link>
+            </h2>
+            <div className="product-rate-cover">
+              <div className="product-rate d-inline-block">
+                <div className="product-rating" style={{ width: product.ratingWidth }}></div>
+              </div>
+              <span className="font-small ml-5 text-muted"> ({product.ratingText})</span>
+            </div>
+            <div>
+              <span className="font-small text-muted">
+                By <Link to={`/vendor/${product.vendor}`}>{product.vendor}</Link>
+              </span>
+            </div>
+            <div className="product-card-bottom">
+              <div className="product-price">
+                <span>${product.price}</span>
+                <span className="old-price">${product.oldPrice}</span>
+              </div>
+              <div className="add-cart">
+                <Link className="add" to="/shop-cart">
+                  <ShoppingCartOutlinedIcon className="mr-5" /> Add
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProductCard;

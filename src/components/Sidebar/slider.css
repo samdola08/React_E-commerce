@@ -1,0 +1,50 @@
+.customSlider {
+  color: #00b894;
+  height: 6px;
+  padding: 10px 0;
+}
+
+.customSlider .MuiSlider-thumb {
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border: 2px solid #00b894;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.customSlider .MuiSlider-track {
+  height: 6px;
+}
+
+.customSlider .MuiSlider-rail {
+  height: 6px;
+  background-color: #dcdcdc;
+  opacity: 1;
+}
+
+.customSlider .MuiSlider-valueLabel {
+  background-color: #00b894;
+  color: white;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+
+.customSlider .MuiSlider-thumb {
+  color: #3BB77E
+}
+
+.customSlider .MuiSlider-track {
+  background-color: #3BB77E; 
+}
+
+.customSlider .MuiSlider-rail {
+  background-color: #d2f1e5;
+}
+.priceRange{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+}
+

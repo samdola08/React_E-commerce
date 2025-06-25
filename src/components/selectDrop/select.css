@@ -1,0 +1,84 @@
+.selectDrop {
+  position: relative;
+}
+
+.openSelect {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  /* position: absolute; */
+}
+
+.openSelect .arrow {
+  font-size: 25px;
+  margin-left: 25px;
+  position: relative;
+  top: 2px; 
+}
+
+.selectDropdown {
+  width: 230px;
+  background: #fff;
+  position: absolute;
+  top: 150%;
+  left: -22px;
+  z-index: 100;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.25);
+  padding: 15px;
+}
+
+.searchField input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #bce3c9;
+  outline: none;
+  padding: 0px 15px;
+}
+
+.searchResults {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 0px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.searchResults::-webkit-scrollbar {
+  width: 10px !important;
+}
+
+.searchResults::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+.searchResults li {
+  list-style: none;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  color: #7E7E7E;
+  border-radius: 7px;
+}
+
+.searchResults li:hover {
+  background: #3bb77e;
+  color: #fff;
+}
+
+.searchResults li.active {
+  background: #f1f1f1;
+  color: #000;
+}
+header .countryWrapper{
+   border: 1px solid rgba(216, 209, 209, 0.5);
+   width: 200px;
+   padding: 5px 0px 10px 20px ;
+   text-align: center;
+   height: 35px;
+   /* display: flex;
+   align-items: center; */
+}
+header .countryWrapper .openSelect{
+    width: 100%;
+}

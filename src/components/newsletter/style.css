@@ -1,0 +1,40 @@
+ .newsLetterBanner {
+  max-width: 450px;
+  height: 65px;
+  position: relative;
+  bottom: 200px;
+  left: 7%;
+  z-index: 100;
+}
+ .newsLetterBanner input {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  border: 0px;
+  outline: none;
+  background: #fff;
+  font-size: 18px;
+  padding-right: 170px;
+  padding-left: 60px;
+}
+ .newsLetterBanner button {
+  height: 65px;
+  width: 35%;
+  font-size: 18px;
+  text-transform: capitalize;
+  padding: 10px 30px;
+  border-radius: 50px;
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  font-weight: 400;
+  right: 0px;
+}
+ .newsLetterBanner .myicon{
+  position: absolute; 
+  top: 24px;
+  left: 25px;
+  z-index: 10;
+  font-size: 18px;
+  opacity: .7;
+}

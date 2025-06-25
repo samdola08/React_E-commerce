@@ -1,0 +1,128 @@
+.productRow {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 20px;
+}
+.rightContent{
+    max-width: 80%;
+    flex: 0 0 80%;
+}
+.rightContent .topStrip{
+  padding: 0px 25px;
+  margin-bottom: 20px;
+
+}
+.rightContent .topStrip p{
+  font-size: 18px;
+}
+
+.rightContent .topStrip .btn {
+  background: none;
+  border: 1px solid #7E7E7E;
+  opacity: .5;
+  box-shadow: none;
+  color: inherit;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 10px;
+  margin-left: 10px; 
+    transition: color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  transition: color 0.3s ease;
+  text-transform: capitalize;
+}
+
+.rightContent .topStrip .btn:hover {
+  color: #29a56c;
+  transform: scale(1.05); 
+  box-shadow: 0 2px 8px rgba(41, 165, 108, 0.3); 
+  
+}
+.dropdownMenu {
+  position: absolute;
+  top: 100%;     
+  left: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+  width: 100px;
+  display: none;  
+  z-index: 1000;
+}
+
+.tab_:hover .dropdownMenu {
+  display: block; 
+}
+
+.dropdownMenu li {
+  padding: 5px 12px;
+  margin-left: 20px;
+}
+
+.dropdownMenu li:hover {
+
+  color: white;
+}
+
+.dropdownMenu2 {
+  position: absolute;
+  top: 100%;     
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+  width: 200px;
+  display: none;  
+  z-index: 1000;
+  margin-bottom: 20px;
+  
+}
+
+.tab_:hover .dropdownMenu2 {
+  display: block; 
+}
+
+.dropdownMenu2 li {
+  padding: 5px 0px;
+  margin-left: 20px;
+  color:rgba(0,0,0,0.15)
+}
+
+.dropdownMenu2 li:hover {
+
+  color: white;
+}
+.dropdownMenu2 li .MuiButton-root {
+  color: #444;           
+  width: 100%;          
+  justify-content: flex-start;  
+}
+
+
+
+
+.dropdownMenu2 li + li {
+  border-top: 1px solid #e5e5e5; 
+}
+
+
+
+.dropdownMenu2 {
+  background: #fefefe;     
+}
+
+.dropdownMenu li + li {
+  border-top: 1px solid #e5e5e5; 
+}
+
+
+
+.dropdownMenu {
+  background: #fefefe;     
+}

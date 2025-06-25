@@ -1,0 +1,42 @@
+/* 5-column responsive grid */
+.productRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+/* pagination bar */
+.pager {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.pager button {
+  min-width: 36px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pager button:hover:not(:disabled) {
+  background: #3bb77e;
+  color: #fff;
+  border-color: #3bb77e;
+}
+
+.pager button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pager button.active {
+  background: #3bb77e;
+  color: #fff;
+  border-color: #3bb77e;
+}

@@ -1,0 +1,70 @@
+import React from 'react';
+import './style.css';
+import Button from '@mui/material/Button';
+import EmojiRating from './EmojiRating';
+
+import { Link } from 'react-router-dom';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
+
+
+
+const Product = () => {
+  return (
+    <div className="productThumb">
+      <Link>
+            <div className="imgWrapper">
+        <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-1-1.jpg" className="img-front w-100" alt="Front" />
+        <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-1-2.jpg" className="img-back w-100" alt="Back" />
+        <div className="overlay">
+          <ul className="list list-inline mb-0">
+            <li className="list-inline-item">
+              <a className="cursor" tooltip="Quick View">
+                <i className="fa-regular fa-eye"></i>
+              </a>
+            </li>
+            <li className="list-inline-item">
+              <a className="cursor" tooltip="Add to Wishlist">
+                <i className="fa-regular fa-heart"></i>
+              </a>
+            </li>
+            <li className="list-inline-item">
+              <a className="cursor" tooltip="Compare">
+                <i className="fa-solid fa-code-compare"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </Link>
+      <div className="info p-3">
+        <span className="catName d-block">Snack</span>
+        <h5 className="title">
+          <Link to="#" className="text-dark">
+            Seeds of Change Organic Quinoa, Brown, & Red Rice
+          </Link>
+        </h5>
+        <EmojiRating /> 
+
+        <span className="brand d-block">
+          By <Link className="text-g font-weight-200">NestFood</Link>
+        </span>
+         
+        <div className="d-flex align-items-center justify-content-between mt-3">
+          <div className="d-flex align-items-center">
+            <span className="price me-2 text-g font-weight-bold">$28.85</span>
+            <span className="oldPrice">$32.8</span>
+          </div>
+          <Button className="transition ml-auto">
+            <ShoppingCartOutlinedIcon /> &nbsp; Add
+          </Button>
+        </div>
+      </div>
+      
+    </div>
+  );
+};
+
+export default Product;

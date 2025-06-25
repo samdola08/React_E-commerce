@@ -1,0 +1,113 @@
+.homeProducts{
+   padding: 25px 0px;   font-family: "Quicksand", sans-serif;
+
+
+}
+.filterTab li{
+    margin-left: 20px;
+}
+.filterTab li a{
+    color: rgb(37, 61, 78);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+.filterTab li:hover a{
+    color: #29a56c !important;
+    top:-3px;
+     font-weight: 600;
+
+     position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.homeProducts .productRow{
+    display: flex;
+    padding: 30px 0px;
+    margin: 0px -15px;
+    flex-wrap: wrap;
+}
+.homeProducts .productRow .item{
+    width: 20%;
+    padding: 15px 15px;
+}
+
+.homeProductsRow2 .col .box{
+    position: relative;
+    border-radius: 15px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.homeProductsRow2 .col .box img{
+    border-radius: 15px;
+    
+}
+
+.homeProductsRow2 .col .box .info{
+    position: absolute;
+    top: 32%;
+    left: 10%;
+}
+.homeProductsRow2 .col .box .info h2{
+    font-weight: bolder;
+    color: #253D4E;
+    font-size: 47px;
+    margin-top: -120px;
+    transition: transform 0.3s ease-in-out;
+}
+.homeProductsRow2 .col .box .info h4:hover {
+  transform: translateY(-10px); 
+}
+
+.homeProductsRow2 .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.homeProductsRow2 .shopBtn {
+  background-color: #3bb77e;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;  
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  align-self: flex-start;
+      top: 229px;
+}
+
+.homeProductsRow2 .shopBtn:hover {
+  background-color: #FDC040;
+   padding-right: 20px; 
+  transform: scaleX(1.02);
+}
+
+
+.homeProductsRow2 .productRow .item{
+    width: 20%;
+    padding: 15px 15px;
+}
+
+.homeProductsRow2 .prodSlider .item{
+    width: 20%;
+    padding: 15px 5px;
+    padding-right: 25px !important;
+    
+}
+.homeProductsRow2 .prodSlider .slick-center .productThumb { 
+  transform: scale(1.1);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 10; 
+}
+.topProductSection {
+    padding: 35px 0px;
+}
