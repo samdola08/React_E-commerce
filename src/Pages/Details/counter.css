@@ -1,0 +1,84 @@
+/* ─────────────────────────────
+   GLOBAL RESET FOR NUMBER INPUT
+   ───────────────────────────── */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;      /* Firefox */
+}
+
+/* ─────────────────────────────
+   WRAPPER (counter + button)
+   ───────────────────────────── */
+.addCartSectio {
+  gap: 12px;                       /* space between counter and <Button> */
+}
+
+/* ─────────────────────────────
+   COUNTER CONTAINER
+   ───────────────────────────── */
+.addCartSectio .counterSec {
+  position: relative;
+  width: 110px;                    /* wider so text never overlaps arrows */
+}
+
+/* ─────────────────────────────
+   NUMBER INPUT
+   ───────────────────────────── */
+.addCartSectio .counterSec input {
+  width: 100%;
+  height: 40px;
+  padding-right: 34px;             /* room for arrows */
+  text-align: center;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  font-size: 15px;
+  line-height: 1;
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+.addCartSectio .counterSec input:focus {
+  border-color: #3bb77e;
+  box-shadow: 0 0 0 3px rgba(59, 183, 126, .2);
+}
+
+/* ─────────────────────────────
+   ARROW BUTTONS
+   ───────────────────────────── */
+.addCartSectio .counterSec .arrow {
+  position: absolute;
+  right: 6px;
+  width: 22px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  transition: color .2s, transform .15s;
+}
+
+.addCartSectio .counterSec .arrow.up  { top: 5px; }
+.addCartSectio .counterSec .arrow.dwn { bottom: 5px; }
+
+.addCartSectio .counterSec .arrow svg {
+  font-size: 19px;                 /* a tad larger than default “small” */
+  color: #3bb77e;                  /* primary green */
+}
+.addCartSectio .counterSec .arrow:hover svg {
+  color: #2aa568;                  /* darker on hover */
+  transform: scale(1.1);
+}
+
+/* ─────────────────────────────
+   RESPONSIVE TWEAKS
+   ───────────────────────────── */
+@media (max-width: 576px) {
+  .addCartSectio .counterSec { width: 90px; }
+  .addCartSectio .counterSec input { height: 36px; }
+  .addCartSectio .counterSec .arrow { width: 20px; height: 18px; }
+  .addCartSectio { gap: 8px; }
+}

@@ -75,7 +75,11 @@ const CategoryPanel = () => {
 
   return (
     <div>
-      <Button onClick={toggleDrawer(true)} className="bg-g text-white catTab">
+      <Button onClick={toggleDrawer(true)} className="bg-g text-white catTab" sx={{
+    fontSize: { xs: "12px", sm: "14px", md: "16px" },
+    padding: { xs: "4px 8px", sm: "6px 12px", md: "5px 10px" },
+    borderRadius: "4px",
+  }}>
         <GridViewOutlinedIcon /> &nbsp;&nbsp;
         <strong>Browse All Categories</strong>
       </Button>

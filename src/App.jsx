@@ -16,7 +16,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Suspense fallback={<div>Loading...</div>}>
+      {/* <Suspense fallback={<div>Loading...</div>}> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/list" element={<Listing />} />{" "}
@@ -24,7 +24,7 @@ function App() {
         
           <Route path="*" element={<Home />} />
         </Routes>
-      </Suspense>
+      {/* </Suspense> */}
       <Footer />
     </BrowserRouter>
   );

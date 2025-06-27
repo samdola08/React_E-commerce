@@ -1,3 +1,62 @@
+/* ============ 1. Laptop / Small-desktop (≤ 991 px) ============ */
+@media (max-width: 991.98px) {
+
+  /* বাম পাশের লিঙ্ক-লিস্টের গ্যাপ কমানো */
+  .topheader .header-info ul        { gap: 12px; }
+  .topheader .header-info ul li a   { font-size: 13px; }
+
+  /* ডান পাশের “Need help” & ড্রপ-ডাউন সামান্য ছোট */
+  .topheader .header-info-two ul li { font-size: 13px; }
+
+  /* নিউজ-ফ্ল্যাশ হাইট সামান্য বাড়িয়ে জায়গা দেয়া */
+  .topheader #news-flash            { height: 24px; }
+  .topheader #news-flash li         { height: 24px; line-height: 24px; }
+}
+
+/* ============ 2. Tablet (≤ 767 px) ============ */
+@media (max-width: 767.98px) {
+
+  /* রো-কে র‍্যাপ করে আইটেমগুলো সেন্টার */
+  .topheader .row               { flex-wrap: wrap; text-align: center; }
+
+  /* কলামগুলো ফুল-উইডথ  */
+  .topheader .col-sm-3,
+  .topheader .col-sm-6          { width: 100% !important; margin-top: 6px; }
+
+  /* বাম পাশের লিঙ্কের আগে থাকা ডিভাইডার লুকিয়ে ফেলি */
+  .topheader li:before          { display: none; }
+
+  /* বাম লিঙ্কগুলোর ফন্ট-সাইজ আরেকটু ছোট, গ্যাপ কম */
+  .topheader .header-info ul        { justify-content: center; gap: 10px; }
+  .topheader .header-info ul li a   { font-size: 12.5px; }
+
+  /* ডান পাশের ইনফো ব্লককে সেন্টার + মিষ্টি প্যাডিং */
+  .topheader .header-info-two       { text-align: center; padding-top: 4px; }
+
+  /* ড্রপ-ডাউন ভিতরের টেক্সট ছোট */
+  .topheader .language-dropdown li a{ font-size: 13px; }
+}
+
+/* ============ 3. Mobile / Small Phones (≤ 575 px) ============ */
+@media (max-width: 575.98px) {
+
+  /* শুধু “Need help? Call Us” দেখাই, অতিরিক্ত লিঙ্ক লুকাই */
+  .topheader .header-info ul        { display: none; }
+
+  /* নিউজ-ফ্ল্যাশকে সর্বোচ্চ 1 লাইন দেখাই—অ্যানিমেশন বন্ধ */
+  .topheader #news-flash            { height: auto; overflow: visible; }
+  .topheader #news-flash ul         { position: static; animation: none; }
+  .topheader #news-flash li         { display: inline; white-space: nowrap; padding: 0 6px; }
+
+  /* ডান পাশের ভাষা/কারেন্সি ড্রপ-ডাউন লুকিয়ে ফোন নম্বর বড় */
+  .topheader .header-info-two ul li:not(:first-child) { display: none; }
+  .topheader .text-brand            { font-size: 15px; }
+
+  /* টপবারে কিছু অতিরিক্ত স্পেস যোগ */
+  .topheader                        { padding: 8px 0; }
+}
+
+
 .topheader {
   background-color: #fff;
   padding: 10px 0;

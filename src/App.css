@@ -24,6 +24,10 @@ body {
   color: #29a56c;
   font-weight: bolder;
 }
+
+.text-org{
+  color: #FDC040;
+}
 .hd {
   font-size: 32px;
   font-weight: 700;
